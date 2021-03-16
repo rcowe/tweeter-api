@@ -5,13 +5,14 @@ class TweetsController < ApplicationController
   end
 
   def show
-    render json: @tweet
+    tweet = Tweet.find(params[:id])
+    render(json: { tweet: tweet })
   end
 
-  private
+  # private
 
-  def set_tweet
-    @tweet = Tweet.find(params[:id])
-  end
+  # def set_tweet
+  #   @tweet = Tweet.find(params[:id])
+  # end
 
 end

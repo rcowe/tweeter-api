@@ -5,13 +5,14 @@ class CommentsController < ApplicationController
   end
 
   def show
-    render json: @comments
+    comment = Comment.find(params[:id])
+    render(json: { comment: comment })
   end
 
-  private
+  # private
 
-  def set_tweet
-    @comment = Comment.find(params[:id])
-  end
+  # def set_comment
+  #   @comment = Comment.find(params[:id])
+  # end
 
 end
