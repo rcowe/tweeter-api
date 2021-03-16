@@ -31,7 +31,6 @@ User.create([
 
 Tweet.create([
                {
-                 user: 'rb',
                  content: 'the square of the hypotenuse is equal to the sum of the squares of the other two sides',
                  media_image: 'null',
                  likes: 3,
@@ -39,7 +38,6 @@ Tweet.create([
                  user_id: 2
                },
                {
-                 user: 'dc',
                  content: "Hey, I'm walkin here!",
                  media_image: 'null',
                  likes: 3,
