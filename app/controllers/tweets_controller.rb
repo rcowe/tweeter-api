@@ -10,9 +10,9 @@ class TweetsController < ApplicationController
   end
 
   # private
-
-  # def set_tweet
-  #   @tweet = Tweet.find(params[:id])
+  #
+  # def tweet_params
+  #   params.require(:tweet).permit()
   # end
 
 end

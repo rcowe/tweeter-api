@@ -10,9 +10,9 @@ class CommentsController < ApplicationController
   end
 
   # private
-
-  # def set_comment
-  #   @comment = Comment.find(params[:id])
+  #
+  # def comments_params
+  #   params.require(:comment).permit()
   # end
 
 end
