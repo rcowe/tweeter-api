@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     render(json: { user: user })
   end
 
-  # private
-  #
-  # def users_params
-  #   params.require(:user).permit()
-  # end
+  private
+
+  def users_params
+    params.require(:user).permit(:image, :name, :username, :location, :bio, :create_date, :followers, :following)
+  end
 
 end

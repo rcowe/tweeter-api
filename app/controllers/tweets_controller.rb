@@ -9,10 +9,10 @@ class TweetsController < ApplicationController
     render(json: { tweet: tweet })
   end
 
-  # private
-  #
-  # def tweet_params
-  #   params.require(:tweet).permit()
-  # end
+  private
+
+  def tweet_params
+    params.require(:tweet).permit(:content, :media_image, :likes, :retweets)
+  end
 
 end
